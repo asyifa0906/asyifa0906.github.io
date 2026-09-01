@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak — Asyifa's Portofolio</title>
+  <meta name="description" content="Kontak Asyifa Nur Cahya Kamila.">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS (Modul 3 & Modul 4) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVBAR (Implementasi Modul 5 & Modul 6)
+       ========================================================================= -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="mainNavbar" aria-label="Navigasi Utama">
+      <a href="index.html" class="nav-brand">ASYIFA'S PORTOFOLIO</a>
+
+      <!-- Tombol Hamburger Mobile -->
+      <button class="nav-toggle" aria-label="Menu navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Daftar Menu Navigasi (Tepat 4 Menu: Beranda, Tentang Saya, Portofolio Dropdown, Kontak) -->
+      <ul class="nav-menu" id="menuNav">
+        <li class="nav-item"><a href="index.html" class="nav-link">BERANDA</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">TENTANG SAYA</a></li>
+        
+        <!-- Multi-Level Dropdown Menu (Modul 6) -->
+        <li class="nav-item has-dropdown">
+          <a href="index.html#pengalaman" class="nav-link">
+            <span>PORTOFOLIO</span>
+            <span class="dropdown-arrow">&blacktriangledown;</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#pengalaman">Pengalaman</a></li>
+            <li><a href="index.html#proyek">Proyek</a></li>
+            <li><a href="index.html#sertifikat">Sertifikat</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link active">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       CONTAINER UTAMA: KONTAK (Modul 5: Layout 2 Kolom)
+       ========================================================================= -->
+  <main class="book-wrapper">
+
+    <section class="journal-sheet">
+      
+      <span class="section-label">SALURAN KOMUNIKASI</span>
+      <h1 class="section-title">KONTAK</h1>
+
+      <div class="contact-minimal-grid">
+        
+        <!-- Kolom Kiri: Instagram & Gmail Sahaja -->
+        <div class="contact-direct-box">
+          
+          <!-- Instagram -->
+          <a href="https://instagram.com/syfrynnn" class="contact-entry-card" target="_blank" rel="noopener">
+            <span class="contact-entry-label">Instagram</span>
+            <span class="contact-entry-value">@syfrynnn</span>
+          </a>
+
+          <!-- Gmail -->
+          <a href="mailto:asyifanurcahyakamila@gmail.com" class="contact-entry-card" target="_blank" rel="noopener">
+            <span class="contact-entry-label">Gmail</span>
+            <span class="contact-entry-value">asyifanurcahyakamila@gmail.com</span>
+          </a>
+
+        </div>
+
+        <!-- Kolom Kanan: Formulir Pesan Minimalis (Modul 3: Forms) -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm" novalidate>
+            
+            <div class="form-group">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Nama Anda..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Alamat Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="email@domain.com..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tuliskan pesan Anda..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-editorial-submit">
+              <span>Kirim Pesan</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Nomor Halaman -->
+      <div class="page-stamp">
+        <span>Halaman</span>
+        <span class="page-num">04</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <p>ASYIFA NUR CAHYA KAMILA &bull; &copy; 2026</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

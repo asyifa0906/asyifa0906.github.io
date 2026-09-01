@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asyifa's Portofolio — Asyifa Nur Cahya Kamila</title>
+  <meta name="description" content="Portofolio Pribadi Asyifa Nur Cahya Kamila.">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS (Modul 3 & Modul 4) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVBAR (Implementasi Modul 5 & Modul 6)
+       ========================================================================= -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="mainNavbar" aria-label="Navigasi Utama">
+      <a href="index.html" class="nav-brand">ASYIFA'S PORTOFOLIO</a>
+
+      <!-- Tombol Hamburger Mobile -->
+      <button class="nav-toggle" aria-label="Menu navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Daftar Menu Navigasi (Tepat 4 Menu: Beranda, Tentang Saya, Portofolio Dropdown, Kontak) -->
+      <ul class="nav-menu" id="menuNav">
+        <li class="nav-item"><a href="index.html" class="nav-link active">BERANDA</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">TENTANG SAYA</a></li>
+        
+        <!-- Multi-Level Dropdown Menu (Modul 6) -->
+        <li class="nav-item has-dropdown">
+          <a href="#pengalaman" class="nav-link">
+            <span>PORTOFOLIO</span>
+            <span class="dropdown-arrow">&blacktriangledown;</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#pengalaman">Pengalaman</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#sertifikat">Sertifikat</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link">KONTAK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       CONTAINER UTAMA (Modul 5: Web Layout Structure)
+       ========================================================================= -->
+  <main class="book-wrapper">
+
+    <!-- -----------------------------------------------------------------------
+         HALAMAN 1 — COVER (SANGAT MINIMAL)
+         ----------------------------------------------------------------------- -->
+    <section id="home" class="journal-sheet">
+      <div class="cover-minimal-layout">
+        
+        <!-- Kolom Kiri: Teks Minimal -->
+        <div class="cover-text-col">
+          <span class="cover-title-badge">PORTOFOLIO</span>
+          <h1 class="cover-name-headline">
+            ASYIFA<br>
+            NUR CAHYA<br>
+            KAMILA
+          </h1>
+          <div style="margin-top: 28px;">
+            <a href="#pengalaman" class="btn-editorial-submit" style="display: inline-block; width: auto; padding: 12px 28px; text-decoration: none; text-align: center;">Lihat Portofolio</a>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Foto Profil Tanpa Teks di Bawahnya (Modul 4: CSS Image) -->
+        <div class="cover-photo-container">
+          <div class="cover-photo-frame">
+            <img src="images/profile/profile.jpg" 
+                 alt="Foto Profil Asyifa Nur Cahya Kamila" 
+                 onerror="this.onerror=null; this.src='images/profile/profile.svg';">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nomor Halaman -->
+      <div class="page-stamp">
+        <span>Halaman</span>
+        <span class="page-num">01</span>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         HALAMAN 2 — PENGALAMAN & ORGANISASI (HANYA 2 FOTO)
+         ----------------------------------------------------------------------- -->
+    <section id="pengalaman" class="journal-sheet">
+      
+      <span class="section-label">PENGALAMAN &amp; ORGANISASI</span>
+      <h2 class="section-title">Pengalaman</h2>
+
+      <div class="pengalaman-editorial-grid">
+        
+        <!-- 01. KETUA OSIS -->
+        <article class="pengalaman-item">
+          <div class="pengalaman-meta-header">
+            <span class="pengalaman-num">01</span>
+            <h3 class="pengalaman-title">KETUA OSIS</h3>
+            <span class="pengalaman-year">2023 / 2024</span>
+          </div>
+          <div class="pengalaman-photo-wrap">
+            <img src="images/pengalaman/osis.jpg" 
+                 alt="Ketua OSIS" 
+                 onerror="this.onerror=null; this.src='images/pengalaman/osis.svg';">
+          </div>
+        </article>
+
+        <!-- 02. DUTA PELAJAR GOWA -->
+        <article class="pengalaman-item">
+          <div class="pengalaman-meta-header">
+            <span class="pengalaman-num">02</span>
+            <h3 class="pengalaman-title">DUTA PELAJAR GOWA</h3>
+            <span class="pengalaman-year">2025</span>
+          </div>
+          <div class="pengalaman-photo-wrap">
+            <img src="images/pengalaman/duta.jpg" 
+                 alt="Duta Pelajar Gowa" 
+                 onerror="this.onerror=null; this.src='images/pengalaman/duta.svg';">
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Nomor Halaman -->
+      <div class="page-stamp">
+        <span>Halaman</span>
+        <span class="page-num">02</span>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         HALAMAN 3 — PROYEK (HANYA 2 PROYEK)
+         ----------------------------------------------------------------------- -->
+    <section id="proyek" class="journal-sheet">
+      
+      <span class="section-label">KARYA PROYEK</span>
+      <h2 class="section-title">Proyek</h2>
+
+      <div class="proyek-editorial-list">
+        
+        <!-- 01. TWOROUTINE -->
+        <article class="proyek-card">
+          <div class="proyek-info">
+            <span class="proyek-num">01</span>
+            <h3 class="proyek-title">TWOROUTINE</h3>
+            <span class="proyek-subtitle">Aplikasi Website Pengingat Rutinitas</span>
+            <p class="proyek-desc">
+              Aplikasi web yang dirancang untuk membantu mahasiswa mencatat, mengatur, dan mengingatkan jadwal rutinitas harian serta tenggat tugas perkuliahan secara terstruktur.
+            </p>
+          </div>
+          <div class="proyek-visual">
+            <img src="images/proyek/tworoutine.jpg" 
+                 alt="Tworoutine — Pengingat Rutinitas" 
+                 onerror="this.onerror=null; this.src='images/proyek/tworoutine.svg';">
+          </div>
+        </article>
+
+        <!-- 02. GO DAMKAR -->
+        <article class="proyek-card reversed">
+          <div class="proyek-info">
+            <span class="proyek-num">02</span>
+            <h3 class="proyek-title">GO DAMKAR</h3>
+            <span class="proyek-subtitle">Aplikasi Pemanggil Bantuan Kejadian</span>
+            <p class="proyek-desc">
+              Platform tanggap darurat berbasis lokasi yang memudahkan masyarakat dalam memanggil dan melaporkan bantuan insiden kebakaran secara cepat kepada pos pemadam kebakaran terdekat.
+            </p>
+          </div>
+          <div class="proyek-visual">
+            <img src="images/proyek/kebakaran.jpg" 
+                 alt="Go Damkar — Pemanggil Bantuan Kejadian" 
+                 onerror="this.onerror=null; this.src='images/proyek/kebakaran.svg';">
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Nomor Halaman -->
+      <div class="page-stamp">
+        <span>Halaman</span>
+        <span class="page-num">03</span>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         HALAMAN 4 — SERTIFIKAT (TOTAL 6 SERTIFIKAT)
+         ----------------------------------------------------------------------- -->
+    <section id="sertifikat" class="journal-sheet">
+      
+      <span class="section-label">DOKUMEN VALIDASI</span>
+      <h2 class="section-title">Sertifikat</h2>
+
+      <div class="sertifikat-gallery-grid">
+        
+        <!-- Sertifikat 1 -->
+        <div class="sertifikat-item" data-full-img="images/sertifikat/sertifikat-1.svg">
+          <div class="sertifikat-thumb">
+            <img src="images/sertifikat/sertifikat-1.jpg" 
+                 alt="Sertifikat 1" 
+                 onerror="this.onerror=null; this.src='images/sertifikat/sertifikat-1.svg';">
+          </div>
+        </div>
+
+        <!-- Sertifikat 2 -->
+        <div class="sertifikat-item" data-full-img="images/sertifikat/sertifikat-2.svg">
+          <div class="sertifikat-thumb">
+            <img src="images/sertifikat/sertifikat-2.jpg" 
+                 alt="Sertifikat 2" 
+                 onerror="this.onerror=null; this.src='images/sertifikat/sertifikat-2.svg';">
+          </div>
+        </div>
+
+        <!-- Sertifikat 3 -->
+        <div class="sertifikat-item" data-full-img="images/sertifikat/sertifikat-3.svg">
+          <div class="sertifikat-thumb">
+            <img src="images/sertifikat/sertifikat-3.jpg" 
+                 alt="Sertifikat 3" 
+                 onerror="this.onerror=null; this.src='images/sertifikat/sertifikat-3.svg';">
+          </div>
+        </div>
+
+        <!-- Sertifikat 4 -->
+        <div class="sertifikat-item" data-full-img="images/sertifikat/sertifikat-4.svg">
+          <div class="sertifikat-thumb">
+            <img src="images/sertifikat/sertifikat-4.jpg" 
+                 alt="Sertifikat 4" 
+                 onerror="this.onerror=null; this.src='images/sertifikat/sertifikat-4.svg';">
+          </div>
+        </div>
+
+        <!-- Sertifikat 5 -->
+        <div class="sertifikat-item" data-full-img="images/sertifikat/sertifikat-5.svg">
+          <div class="sertifikat-thumb">
+            <img src="images/sertifikat/sertifikat-5.jpg" 
+                 alt="Sertifikat 5" 
+                 onerror="this.onerror=null; this.src='images/sertifikat/sertifikat-5.svg';">
+          </div>
+        </div>
+
+        <!-- Sertifikat 6 -->
+        <div class="sertifikat-item" data-full-img="images/sertifikat/sertifikat-6.svg">
+          <div class="sertifikat-thumb">
+            <img src="images/sertifikat/sertifikat-6.jpg" 
+                 alt="Sertifikat 6" 
+                 onerror="this.onerror=null; this.src='images/sertifikat/sertifikat-6.svg';">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nomor Halaman -->
+      <div class="page-stamp">
+        <span>Halaman</span>
+        <span class="page-num">04</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       LIGHTBOX MODAL SERTIFIKAT (Modul 4 & Modul 6)
+       ========================================================================= -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Pratinjau Sertifikat">
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="lightbox-close-btn" aria-label="Tutup preview">&times;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="Pratinjau Sertifikat">
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <p>ASYIFA NUR CAHYA KAMILA &bull; &copy; 2026</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
