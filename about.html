@@ -1,158 +1,317 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang Saya — Asyifa's Portofolio</title>
-  <meta name="description" content="Tentang Asyifa Nur Cahya Kamila.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Tentang Saya — Asyifa's Portofolio</title>
 
-  <!-- External CSS (Modul 3 & Modul 4) -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Tentang Asyifa Nur Cahya Kamila.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- =========================================================================
-       NAVBAR (Implementasi Modul 5 & Modul 6)
-       ========================================================================= -->
-  <header class="navbar-wrapper">
-    <nav class="navbar" id="mainNavbar" aria-label="Navigasi Utama">
-      <a href="index.html" class="nav-brand">ASYIFA'S PORTOFOLIO</a>
+    <header class="navbar-wrapper">
 
-      <!-- Tombol Hamburger Mobile -->
-      <button class="nav-toggle" aria-label="Menu navigasi" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <nav class="navbar" id="mainNavbar" aria-label="Navigasi Utama">
 
-      <!-- Daftar Menu Navigasi (Tepat 4 Menu: Beranda, Tentang Saya, Portofolio Dropdown, Kontak) -->
-      <ul class="nav-menu" id="menuNav">
-        <li class="nav-item"><a href="index.html" class="nav-link">BERANDA</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link active">TENTANG SAYA</a></li>
-        
-        <!-- Multi-Level Dropdown Menu (Modul 6) -->
-        <li class="nav-item has-dropdown">
-          <a href="index.html#pengalaman" class="nav-link">
-            <span>PORTOFOLIO</span>
-            <span class="dropdown-arrow">&blacktriangledown;</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="index.html#pengalaman">Pengalaman</a></li>
-            <li><a href="index.html#proyek">Proyek</a></li>
-            <li><a href="index.html#sertifikat">Sertifikat</a></li>
-          </ul>
-        </li>
+            <a href="index.html" class="nav-brand">
+                ASYIFA'S PORTFOLIO
+            </a>
 
-        <li class="nav-item"><a href="contact.html" class="nav-link">KONTAK</a></li>
-      </ul>
-    </nav>
-  </header>
+            <button class="nav-toggle"
+                aria-label="Menu navigasi"
+                aria-expanded="false">
 
-  <!-- =========================================================================
-       CONTAINER UTAMA: TENTANG SAYA (Modul 5: Layout 2 Kolom)
-       ========================================================================= -->
-  <main class="book-wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
 
-    <section class="journal-sheet">
-      
-      <span class="section-label">PROFIL</span>
-      <h1 class="section-title">TENTANG SAYA</h1>
+            </button>
 
-      <div class="about-minimal-grid">
-        
-        <!-- Kolom Kiri: Foto Profil (Modul 4: CSS Image) -->
-        <div class="about-photo-wrap">
-          <img src="images/profile/profile.jpg" 
-               alt="Foto Asyifa Nur Cahya Kamila" 
-               onerror="this.onerror=null; this.src='images/profile/profile.svg';">
-        </div>
+            <ul class="nav-menu" id="menuNav">
 
-        <!-- Kolom Kanan: Nama, Pendidikan, Keahlian (Modul 5) -->
-        <div class="about-details-wrap">
-          
-          <h2 class="about-info-title">Asyifa Nur Cahya Kamila</h2>
-          <p class="about-bio-desc">
-            Saya adalah mahasiswa S1 Teknik Komputer di Universitas Negeri Makassar yang berfokus pada pengembangan rekayasa perangkat lunak web, logika pemrograman, dan kepemimpinan organisasi. Memiliki dedikasi untuk terus berinovasi dalam merancang solusi teknologi digital yang terstruktur, efisien, dan memberikan dampak positif.
-          </p>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        BERANDA
+                    </a>
+                </li>
 
-          <!-- PENDIDIKAN -->
-          <div class="pendidikan-block">
-            <h3 class="pendidikan-heading">PENDIDIKAN</h3>
-            <div class="pendidikan-list">
-              
-              <div class="pendidikan-item">
-                <span class="pendidikan-school">Universitas Negeri Makassar</span>
-                <span class="pendidikan-major">S1 Teknik Komputer</span>
-                <span class="pendidikan-year">2025 &mdash; Sekarang</span>
-              </div>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">
+                        TENTANG SAYA
+                    </a>
+                </li>
 
-              <div class="pendidikan-item">
-                <span class="pendidikan-school">SMKN 2 Gowa</span>
-                <span class="pendidikan-year">2023 &mdash; 2025</span>
-              </div>
+                <li class="nav-item has-dropdown">
+
+                    <a href="index.html#pengalaman"
+                        class="nav-link">
+
+                        <span>PORTOFOLIO</span>
+                        <span class="dropdown-arrow">
+                            &blacktriangledown;
+                        </span>
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="index.html#pengalaman">
+                                Pengalaman
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#proyek">
+                                Proyek
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#sertifikat">
+                                Sertifikat
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html"
+                        class="nav-link">
+                        KONTAK
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="book-wrapper">
+
+        <section class="journal-sheet">
+
+            <!-- JUDUL HALAMAN -->
+
+            <span class="section-label">
+                PROFIL
+            </span>
+
+            <h1 class="section-title">
+                TENTANG SAYA
+            </h1>
+
+
+            <div class="about-minimal-grid">
+
+
+                <!-- KARTU PROFIL -->
+
+                <div class="about-profile-card">
+
+
+                    </h2>
+
+                    <div class="about-photo-wrap">
+
+                        <img src="images/profile/profile.jpg"
+                            alt="Foto Asyifa Nur Cahya Kamila"
+                            onerror="this.onerror=null; this.src='images/profile/profile.svg';">
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMASI PROFIL -->
+
+                <div class="about-details-wrap">
+
+
+                    <!-- DESKRIPSI -->
+
+                    <p class="about-bio-desc">
+
+                        <strong>
+                            Asyifa Nur Cahya Kamila
+                        </strong>
+                        percaya bahwa ide terbaik bukan hanya untuk dipikirkan,
+                        tetapi untuk diwujudkan dan disuarakan. Teknologi mengasah
+                        cara saya menciptakan dan public speaking menguatkan cara
+                        saya menyampaikan. Keduanya menjadi ruang bagi saya untuk
+                        terus bertumbuh, berkarya, dan menciptakan kemungkinan.
+
+                    </p>
+
+
+                    <!-- PENDIDIKAN -->
+
+                    <div class="pendidikan-block">
+
+                        <h3 class="pendidikan-heading">
+                            PENDIDIKAN
+                        </h3>
+
+                        <div class="pendidikan-list">
+
+
+                            <div class="pendidikan-item">
+
+                                <span class="pendidikan-school">
+                                    Universitas Negeri Makassar
+                                </span>
+
+                                <span class="pendidikan-major">
+                                    S1 Teknik Komputer
+                                </span>
+
+                                <span class="pendidikan-year">
+                                    2025 &mdash; Sekarang
+                                </span>
+
+                            </div>
+
+
+                            <div class="pendidikan-item">
+
+                                <span class="pendidikan-school">
+                                    SMKN 2 Gowa
+                                </span>
+
+                                <span class="pendidikan-major">
+                                    Teknik Komputer dan Jaringan
+                                </span>
+
+                                <span class="pendidikan-year">
+                                    2023 &mdash; 2025
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- KEAHLIAN -->
+
+                    <div class="skills-block">
+
+                        <h3 class="skills-heading">
+                            KEAHLIAN
+                        </h3>
+
+                        <div class="skills-two-columns">
+
+
+                            <!-- KEAHLIAN TEKNIS -->
+
+                            <div class="skill-category-box">
+
+                                <h4 class="skill-category-title">
+                                    KEAHLIAN TEKNIS
+                                </h4>
+
+                                <ul class="skill-simple-list">
+
+                                    <li>C++</li>
+                                    <li>HTML</li>
+                                    <li>Jaringan Komputer</li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <!-- KEAHLIAN NON-TEKNIS -->
+
+                            <div class="skill-category-box">
+
+                                <h4 class="skill-category-title">
+                                    KEAHLIAN NON-TEKNIS
+                                </h4>
+
+                                <ul class="skill-simple-list">
+
+                                    <li>Public Speaking</li>
+                                    <li>Puisi</li>
+                                    <li>Kepemimpinan</li>
+
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TOMBOL -->
+
+                    <div class="about-button">
+
+                        <a href="index.html#pengalaman"
+                            class="btn-editorial-submit">
+
+                            Lihat Portofolio
+
+                        </a>
+
+                    </div>
+
+
+                </div>
 
             </div>
-          </div>
 
-          <!-- KEAHLIAN (2 Kolom) -->
-          <div class="skills-block">
-            <h3 class="skills-heading">KEAHLIAN</h3>
-            
-            <div class="skills-two-columns">
-              
-              <!-- KEAHLIAN TEKNIS -->
-              <div class="skill-category-box">
-                <h4 class="skill-category-title">KEAHLIAN TEKNIS</h4>
-                <ul class="skill-simple-list">
-                  <li>C++</li>
-                  <li>Python</li>
-                  <li>Jaringan Komputer</li>
-                </ul>
-              </div>
 
-              <!-- KEAHLIAN NON-TEKNIS -->
-              <div class="skill-category-box">
-                <h4 class="skill-category-title">KEAHLIAN NON-TEKNIS</h4>
-                <ul class="skill-simple-list">
-                  <li>Public Speaking</li>
-                  <li>Puisi</li>
-                  <li>Kepemimpinan</li>
-                </ul>
-              </div>
+            <!-- NOMOR HALAMAN -->
+
+            <div class="page-stamp">
+
+                <span>Halaman</span>
+
+                <span class="page-num">
+                    02
+                </span>
 
             </div>
-          </div>
 
-          <div style="margin-top: 28px;">
-            <a href="index.html#pengalaman" class="btn-editorial-submit" style="display: inline-block; width: auto; padding: 12px 28px; text-decoration: none; text-align: center;">Lihat Portofolio</a>
-          </div>
+        </section>
 
-        </div>
+    </main>
 
-      </div>
 
-      <!-- Nomor Halaman -->
-      <div class="page-stamp">
-        <span>Halaman</span>
-        <span class="page-num">02</span>
-      </div>
-    </section>
+    <footer class="site-footer">
 
-  </main>
+        <p>
+            ASYIFA NUR CAHYA KAMILA
+            &bull; &copy; 2026
+        </p>
 
-  <!-- =========================================================================
-       FOOTER
-       ========================================================================= -->
-  <footer class="site-footer">
-    <p>ASYIFA NUR CAHYA KAMILA &bull; &copy; 2026</p>
-  </footer>
+    </footer>
 
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
