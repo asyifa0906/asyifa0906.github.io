@@ -12,12 +12,6 @@ Website ini dibuat menggunakan HTML, CSS, dan JavaScript.
 - Sertifikat
 - Kontak
 
-### Modul yang Digunakan
-- Modul 3: CSS dan Selector
-- Modul 4: Image dan Background
-- Modul 5: Navigasi dan Layout
-- Modul 6: Dropdown, Border Radius, Gradient, dan Shadow
-
 ### Struktur File
 ```text
 portofolio/
